@@ -1,4 +1,5 @@
 import sys 
+from decimal import Decimal
 
 def suma(a, b):
     return a + b
@@ -24,8 +25,8 @@ def main():
             continue
         
         try:
-            n1 = float(input("\nIngrese el primer numero: "))
-            n2 = float(input("Ingrese el segundo numero: "))
+            n1 = Decimal(input("\nIngrese el primer numero: "))
+            n2 = Decimal(input("Ingrese el segundo numero: "))
         except ValueError:
             print("\nEntrada invalida")
             continue
